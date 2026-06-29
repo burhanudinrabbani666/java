@@ -6,6 +6,11 @@ public class Employee {
     byte age;
     char gender;
 
+    // CONSTRUCTOR
+    public Employee() {
+
+    }
+
     // METHODS
     public byte getAge() {
         return this.age;
