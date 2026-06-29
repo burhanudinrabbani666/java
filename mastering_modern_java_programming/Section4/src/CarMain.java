@@ -1,7 +1,7 @@
 public class CarMain {
     static {
         System.out.println("Static in the same class with main");
-        System.exit(0); // This is make program not working.
+        // System.exit(0); // This is make program not working.
     }
 
     public static void main(String[] args) {
