@@ -10,11 +10,15 @@ public class CommentMain {
     }
 
     /**
-     * 
      * Car
      * 
      * @version 1.0.0
      * @author burhanudin rabbani
+     */
+
+    /*
+     * This class represent a car in CommentMain app.
+     * have name (String) and engine (String) property
      */
     public static class Car {
         private String name;
