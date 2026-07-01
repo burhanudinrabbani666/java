@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SearchingStringDemo",
+            "request": "launch",
+            "mainClass": "SearchingStringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "ConvertValueToStringDemo",
+            "request": "launch",
+            "mainClass": "ConvertValueToStringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
             "name": "ChangingStringDemo",
             "request": "launch",
             "mainClass": "ChangingStringDemo",
