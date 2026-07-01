@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SubstringDemo",
+            "request": "launch",
+            "mainClass": "SubstringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
             "name": "SearchingStringDemo",
             "request": "launch",
             "mainClass": "SearchingStringDemo",
