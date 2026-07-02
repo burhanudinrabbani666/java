@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JoinDemo",
+            "request": "launch",
+            "mainClass": "JoinDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
             "name": "SplitDemo",
             "request": "launch",
             "mainClass": "SplitDemo",
