@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TypeblockDemo",
+            "request": "launch",
+            "mainClass": "TypeblockDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "StringsMutable",
+            "request": "launch",
+            "mainClass": "StringsMutable",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
             "name": "PrintfDemo",
             "request": "launch",
             "mainClass": "PrintfDemo",
