@@ -11,5 +11,11 @@ public class StringsFormatDemo {
         String promo = "The price only $%.2f";
         String teaPromo = String.format(promo, 12.22);
         System.out.println(teaPromo);
+
+        // Dynamic placeholder.
+        String introduction = "Hi my name is %2$s, i'm %1$d years old";
+        String introductionBani = String.format(introduction, 23, "bani");
+        System.out.println(introductionBani);
+
     }
 }
