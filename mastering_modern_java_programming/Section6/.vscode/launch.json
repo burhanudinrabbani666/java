@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ParsingDemo",
+            "request": "launch",
+            "mainClass": "ParsingDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeDemo",
+            "request": "launch",
+            "mainClass": "PalindromeDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "TypeblockDemo",
+            "request": "launch",
+            "mainClass": "TypeblockDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "StringsMutable",
+            "request": "launch",
+            "mainClass": "StringsMutable",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "PrintfDemo",
+            "request": "launch",
+            "mainClass": "PrintfDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "StringsFormatDemo",
+            "request": "launch",
+            "mainClass": "StringsFormatDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "JoinDemo",
+            "request": "launch",
+            "mainClass": "JoinDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "SplitDemo",
+            "request": "launch",
+            "mainClass": "SplitDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "Replacing",
+            "request": "launch",
+            "mainClass": "Replacing",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "SubstringDemo",
+            "request": "launch",
+            "mainClass": "SubstringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "SearchingStringDemo",
+            "request": "launch",
+            "mainClass": "SearchingStringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "ConvertValueToStringDemo",
+            "request": "launch",
+            "mainClass": "ConvertValueToStringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "ChangingStringDemo",
+            "request": "launch",
+            "mainClass": "ChangingStringDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "EmptyDemo",
+            "request": "launch",
+            "mainClass": "EmptyDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "CharAtDemo",
+            "request": "launch",
+            "mainClass": "CharAtDemo",
+            "projectName": "Section6_6850af99"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
