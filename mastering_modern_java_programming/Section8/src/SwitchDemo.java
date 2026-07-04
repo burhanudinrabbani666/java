@@ -3,6 +3,7 @@ public class SwitchDemo {
 
         String fruitName = "banana";
 
+        // switch case
         switch (fruitName) {
             // multiaple cases
             case "banana":
@@ -24,6 +25,17 @@ public class SwitchDemo {
                 System.out.println("Fruit pice not found!");
                 break;
         }
+
+        // switch expression
+        String output = switch (fruitName) {
+            case "banana", "apple" -> "$1.0 Charged";
+            case "grapes" -> "$2.0 Charged";
+            case "pineapple" -> "$2.5 Charged";
+            case "mango" -> "$3.0 Charged";
+            default -> "input your valid fruit name";
+        };
+
+        System.out.println(output + " expression");
 
     }
 }
