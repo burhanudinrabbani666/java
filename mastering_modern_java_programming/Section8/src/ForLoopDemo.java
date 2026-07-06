@@ -8,7 +8,5 @@ public class ForLoopDemo {
             System.out.printf("5 * %d = %d\n", i, result);
         }
 
-        // nested for loop
-
     }
 }
