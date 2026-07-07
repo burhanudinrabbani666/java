@@ -17,6 +17,6 @@ public class DynamicPoly {
 
         // overload
         ironman.eat();
-        ironman.eat("bakso", 12);
+        System.out.println(ironman.eat("bakso", 12));
     }
 }

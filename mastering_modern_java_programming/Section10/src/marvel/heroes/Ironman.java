@@ -29,10 +29,11 @@ public class Ironman extends Person {
     }
 
     // overloaded method 2
-    public void eat(String food, int quantity) {
-        System.out.printf(
-                "ironman eat method overloaded 2. food: %s, quantity: %d\n",
-                food, quantity);
+    public String eat(String food, int quantity) {
+        return String.format("""
+                Ironman eat method overloaded 2. food: %s, quantity: %d\n
+                """, food, quantity);
+
     }
 
 }
