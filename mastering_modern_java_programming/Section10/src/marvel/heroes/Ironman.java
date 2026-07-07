@@ -16,11 +16,23 @@ public class Ironman extends Person {
     @Override
     public void eat(String food) {
         super.eat("ketoprak");
-        System.out.printf("Ironman eatig the food %s\n", food);
+        System.out.printf("Ironman eating %s\n", food);
     }
 
     public void callOverideEatMethod() {
         super.eat("ketoprak");
+    }
+
+    // overloaded method 1
+    public void eat() {
+        System.out.println("ironman ear method overloaded 1");
+    }
+
+    // overloaded method 2
+    public void eat(String food, int quantity) {
+        System.out.printf(
+                "ironman eat method overloaded 2. food: %s, quantity: %d\n",
+                food, quantity);
     }
 
 }

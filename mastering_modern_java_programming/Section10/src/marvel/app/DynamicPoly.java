@@ -11,5 +11,12 @@ public class DynamicPoly {
 
         Ironman ironman = new Ironman();
         ironman.callOverideEatMethod();
+
+        // override
+        ironman.eat("ketoprak");
+
+        // overload
+        ironman.eat();
+        ironman.eat("bakso", 12);
     }
 }
