@@ -8,16 +8,9 @@ public class TestMethodHiding {
         Vehicle vehicle = new Vehicle();
         Car car = new Car();
 
-        Vehicle.start();
-        vehicle.start(); // vehicle starting
-
-        Car.start();
-        car.start(); // car starting
-
-        ((Vehicle) car).start(); // car starting
-
-        vehicle = car;
-        vehicle.start();
+        System.out.println(vehicle.color);
+        System.out.println(car.color);
+        car.getCarDetail();
 
     }
 
