@@ -13,12 +13,12 @@ public class AnimalUtility {
     public static void performAction(Animal animal) {
         animal.eat();
 
-        if (animal instanceof Dog) {
+        if (animal instanceof Dog) { // old syntax
             Dog dog = (Dog) animal;
             dog.bark();
-        } else if (animal instanceof Cat) {
-            Cat cat = (Cat) animal;
+        } else if (animal instanceof Cat cat) { // new syntax. java 16 ^
             cat.meow();
         }
+
     }
 }

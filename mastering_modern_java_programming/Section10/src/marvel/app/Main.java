@@ -5,7 +5,9 @@ import marvel.heroes.Ironman;
 
 public class Main {
     public static void main(String[] args) {
+
         Ironman ironMan = new Ironman();
+
         ironMan.walk();
         ironMan.eat("pasta");
         ironMan.sleep();
