@@ -1,0 +1,22 @@
+package marvel.hero.impl;
+
+import marvel.hero.SuperHero;
+
+public class Ironman implements SuperHero {
+
+    @Override
+    public String usePower() {
+        return "Ironman using his power";
+    }
+
+    @Override
+    public String stopVillain(char c) {
+
+        if (c == 'Y') {
+            return "Ironman Killed the villain";
+        } else {
+            return "Ironman stoped the villain";
+        }
+    }
+
+}
