@@ -6,6 +6,7 @@ public class Ironman implements SuperHero {
 
     @Override
     public String usePower() {
+        System.out.println(UNIVERSE_NAME);
         return "Ironman using his power";
     }
 

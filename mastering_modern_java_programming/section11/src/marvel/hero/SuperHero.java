@@ -1,6 +1,8 @@
 package marvel.hero;
 
 public interface SuperHero extends Person {
+    String UNIVERSE_NAME = "MARVEL";
+
     public String usePower();
 
     /**

@@ -6,6 +6,7 @@ public class Spiderman implements SuperHero {
 
     @Override
     public String usePower() {
+        System.out.println(UNIVERSE_NAME);
         return "Spiderman use his power";
 
     }
