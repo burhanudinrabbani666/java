@@ -19,4 +19,8 @@ public interface SuperHero extends Person {
         return liveLocation;
     }
 
+    public static String commonCharacteristic() {
+        return "Superhuman abillities, Willingness to sacrifice";
+    }
+
 }

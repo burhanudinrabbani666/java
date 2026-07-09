@@ -14,6 +14,8 @@ public class MarvelHeroDemo {
         invokeSuperHero(ironman);
         invokeSuperHero(spiderman);
         invokeSuperHero(captainAmerice);
+
+        System.out.println(SuperHero.commonCharacteristic());
     }
 
     public static void invokeSuperHero(SuperHero superHero) {
