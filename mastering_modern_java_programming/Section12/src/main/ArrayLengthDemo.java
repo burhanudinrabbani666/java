@@ -14,7 +14,13 @@ public class ArrayLengthDemo {
             System.out.printf("name%d: %s\n", i + 1, names[i]);
         }
 
-        double[] prices = new double[Integer.MAX_VALUE];
+        double[] prices = new double[1000];
         System.out.println(prices.length);
+
+        char[] grades = new char[0];
+        int[] emptyArray = {};
+
+        System.out.println(grades.length); // 0
+        System.out.println(emptyArray.length); // 0
     }
 }
