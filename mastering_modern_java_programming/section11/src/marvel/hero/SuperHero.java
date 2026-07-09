@@ -10,4 +10,13 @@ public interface SuperHero extends Person {
      * @return - returns Status
      */
     public String stopVillain(char c);
+
+    // the default syntax make the class of this interface not allowed
+    // to implement this immediatlly
+    public default String trackLiveLocation() {
+        String liveLocation = "USA";
+        System.out.println("I'm in " + liveLocation);
+        return liveLocation;
+    }
+
 }

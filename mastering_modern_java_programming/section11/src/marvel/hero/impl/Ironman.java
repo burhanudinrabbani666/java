@@ -20,4 +20,11 @@ public class Ironman implements SuperHero {
         }
     }
 
+    @Override
+    public String trackLiveLocation() {
+        String liveLocation = "Indonesia";
+        System.out.printf("I'm ironman, now in %s\n", liveLocation);
+        return liveLocation;
+    }
+
 }
