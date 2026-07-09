@@ -12,6 +12,6 @@ public class BufferReaderDemo {
         System.out.println("Type input & press enter when done: ");
         String str = reader.readLine();
         System.out.println("You entered: " + str);
-        reader.close();
+        reader.close(); // should be close connection for not memory leak
     }
 }
