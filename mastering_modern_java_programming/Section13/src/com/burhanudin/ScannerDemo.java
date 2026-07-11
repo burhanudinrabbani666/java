@@ -9,7 +9,7 @@ public class ScannerDemo {
 
         try (scanner) {
             System.out.println("Enter your name: ");
-            String name = scanner.next();
+            String name = scanner.nextLine();
 
             System.out.println("Enter your age: ");
             Integer age = scanner.nextInt();
