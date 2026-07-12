@@ -3,13 +3,11 @@ package com.burhanudin.exception;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ExceptionDemo {
-    public static void main(String[] args) throws InputMismatchException {
+public class TryWithResourceDemo {
+    public static void main(String[] args) {
 
-        Scanner scanner = null;
-        try {
-            scanner = new Scanner(System.in);
-
+        // this is automatically close: java 7+
+        try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Enter a numeric number...");
             int number = scanner.nextInt();
             System.out.println("user input number: " + number);
@@ -20,11 +18,6 @@ public class ExceptionDemo {
                     """);
             ex.printStackTrace();
 
-        } finally {
-            System.out.println("This is finally block");
-            if (scanner != null) {
-                scanner.close();
-            }
         }
 
     }
