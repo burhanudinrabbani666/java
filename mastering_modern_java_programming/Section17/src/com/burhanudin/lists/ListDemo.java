@@ -12,14 +12,22 @@ public class ListDemo {
         countries.add("Singapore");
         countries.add("Thailand");
         countries.add("Vietnam");
+        countries.add(1, "Timor Leste");
+
+        countries.set(2, "Kamboja");
 
         for (int i = 0; i < countries.size(); i++) {
-            System.out.printf(
-                    "%d. %s\n", // 0. Indonesia
-                    i,
-                    countries.get(i));
+            if (countries.get(i) == "Indonesia") {
+                System.err.println("👑 King " + countries.get(i));
+            } else {
+                System.out.printf(
+                        "%d. %s\n", // 0. Indonesia
+                        i,
+                        countries.get(i));
+            }
         }
 
-        var doubleNums = new ArrayList<Double>();
+        System.out.println(countries.reversed().toString());
+        // var doubleNums = new ArrayList<Double>();
     }
 }
