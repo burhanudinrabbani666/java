@@ -36,5 +36,11 @@ public class SetDemo {
         System.out.println(visitedCountry.size());
         System.out.println(visitedCountry);
 
+        int count = 1;
+        for (String country : visitedCountry) {
+            System.out.printf("%d. %s\n", count, country);
+            count++;
+        }
+
     }
 }
