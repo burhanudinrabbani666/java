@@ -30,8 +30,24 @@ public class LinkedListDemo {
         countryNames.add("Cambodia");
         countryNames.add("Vietnam");
 
-        System.out.println(countryNames
+        System.out.println(countryNames);
 
-        );
+        // replace
+        countryNames.set(3, "Timor leste");
+        System.out.println(countryNames);
+
+        // remove
+        countryNames.remove(3);
+        System.out.println(countryNames);
+
+        // get : thorws NoSuchElementException.
+        String firstElement = countryNames.getFirst();
+        String lastElement = countryNames.getLast();
+        System.err.println(firstElement);
+        System.err.println(lastElement);
+
+        // reversing
+        List<String> reverseCountryNames = countryNames.reversed();
+        System.out.println(reverseCountryNames);
     }
 }
