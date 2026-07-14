@@ -1,6 +1,7 @@
 package com.burhanudin.set;
 
 import java.util.LinkedHashSet;
+import java.util.SequencedSet;
 
 public class LinkedHashSetDemo {
     public static void main(String[] args) {
@@ -18,6 +19,9 @@ public class LinkedHashSetDemo {
         for (String county : countryNames) {
             System.out.println(county);
         }
+
+        SequencedSet<String> reverseCountryNames = countryNames.reversed();
+        System.out.println(reverseCountryNames);
 
     }
 }
