@@ -27,5 +27,10 @@ public class SortingLinkedListDemo {
         // NATURAL ORDER
         Collections.sort(countryNames, Comparator.naturalOrder());
         System.out.println(countryNames);
+
+        // CUSTOM SORT
+        Collections.sort(countryNames, new LastCharComparation());
+        System.out.println(countryNames);
     }
+
 }
