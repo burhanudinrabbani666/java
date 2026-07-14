@@ -6,6 +6,8 @@ public class GenericMethodDemo {
         String[] stringArray = { "Hello", "World" };
         printArray(stringArray);
 
+        Integer[] intArray = { 1, 2, 3, 4, 5 };
+        printArray(intArray);
     }
 
     static <T> void printArray(T[] array) {
