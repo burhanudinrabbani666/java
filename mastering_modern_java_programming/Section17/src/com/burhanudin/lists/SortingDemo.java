@@ -43,5 +43,18 @@ public class SortingDemo {
         countries.sort(Comparator.reverseOrder());
         System.out.println(countries + " - dsc");
 
+        // Custom sorting
+        var countries1 = new ArrayList<String>();
+        countries1.add("Indonesia");
+        countries1.add("Vietnam");
+        countries1.add("Vietnam");
+        countries1.add("Singapore");
+        countries1.add("Malaysia");
+        countries1.add("Thailand");
+
+        countries1.sort(new LastCharComparatorDemo());
+        // Collections.sort(countries1, new LastCharComparatorDemo());
+        System.out.println(countries1);
+
     }
 }
