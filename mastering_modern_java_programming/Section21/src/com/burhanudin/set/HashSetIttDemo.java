@@ -31,6 +31,7 @@ public class HashSetIttDemo {
         Iterator<String> iterator = superPowers.iterator();
         while (iterator.hasNext()) {
             String superPower = iterator.next();
+
             System.out.println(superPower.toLowerCase());
         }
     }
