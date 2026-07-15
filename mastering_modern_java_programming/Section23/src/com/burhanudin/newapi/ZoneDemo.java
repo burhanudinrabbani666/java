@@ -1,6 +1,7 @@
 package com.burhanudin.newapi;
 
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 
 public class ZoneDemo {
@@ -16,5 +17,15 @@ public class ZoneDemo {
 
         System.err.println(date);
         System.out.println(destDate);
+
+        // OFFSET
+        ZoneOffset offset = ZoneOffset.ofHoursMinutes(7, 0); // Jakarta
+        ZoneOffset destOffset = ZoneOffset.ofHoursMinutes(-5, 0); // New York
+
+        ZonedDateTime utc2DateTime = ZonedDateTime.now(offset);
+        ZonedDateTime utc2DestTime = date.withZoneSameInstant(destOffset);
+        System.out.println(utc2DateTime);
+        System.out.println(utc2DestTime);
+
     }
 }
