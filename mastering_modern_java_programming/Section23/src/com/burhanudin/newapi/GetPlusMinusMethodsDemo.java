@@ -3,6 +3,7 @@ package com.burhanudin.newapi;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Month;
 
 public class GetPlusMinusMethodsDemo {
@@ -34,6 +35,9 @@ public class GetPlusMinusMethodsDemo {
         System.out.println(renewWeek);
         System.out.println(minMonth);
         System.out.println(minYear);
+
+        LocalTime localTime = LocalTime.of(9, 0);
+        LocalTime newLocalTime = localTime.plusHours(8).plusMinutes(15);
 
     }
 }
