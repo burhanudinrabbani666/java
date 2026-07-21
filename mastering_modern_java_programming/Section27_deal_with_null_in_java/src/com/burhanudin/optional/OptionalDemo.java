@@ -16,8 +16,7 @@ public class OptionalDemo {
 
         // validate with isEmpty() before get()
         if (!message2.isEmpty()) {
-            System.out.println(message2
-                    .get().toUpperCase());
+            System.out.println(message2.get().toUpperCase());
         }
 
         // ifPresent
@@ -30,11 +29,28 @@ public class OptionalDemo {
 
         // orElse
         String msg1 = message2.orElse("orElse: Value is absent"); // <- default value
+
         System.out.println(msg1);
 
         // orElse
         String msg2 = message2.orElseGet(() -> "orElseGet: value is absent");
         System.out.println(msg2);
+
+        // orElseThrow
+        String msg3 = message2.orElseThrow();
+        System.out.println(msg3);
+
+        // orElseThrow
+        String msg4 = message2.orElseThrow(() -> new IllegalStateException("orElseThrow: value is absen"));
+        System.out.println(msg4);
+
+        // MAP
+        Optional<String> optionalStrMap = message2.map(val -> val.toUpperCase());
+        System.out.println("OptionalMap: " + optionalStrMap.get());
+
+        // FILTER
+        Optional<String> optionalStrFilter = message2.filter(val -> val.length() > 5);
+        System.out.println("OptionalMap: " + optionalStrFilter.get());
 
     }
 
