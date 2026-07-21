@@ -20,6 +20,22 @@ public class OptionalDemo {
                     .get().toUpperCase());
         }
 
+        // ifPresent
+        message2.ifPresent(System.out::println);
+
+        // ifPresentOrElse
+        message2.ifPresentOrElse(
+                msg -> System.out.println("ifPresentOrElse: " + msg.toUpperCase()),
+                () -> System.out.println("Value is absent"));
+
+        // orElse
+        String msg1 = message2.orElse("orElse: Value is absent"); // <- default value
+        System.out.println(msg1);
+
+        // orElse
+        String msg2 = message2.orElseGet(() -> "orElseGet: value is absent");
+        System.out.println(msg2);
+
     }
 
     public static String sayHello() {
