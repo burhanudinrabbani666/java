@@ -5,13 +5,11 @@ public class SleepThreadDemo {
         long start = System.currentTimeMillis();
 
         for (int i = 0; i < 5; i++) {
-
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                System.out.println(e);
+                throw new RuntimeException(e);
             }
-
             System.out.println("Hello from main method" + i);
         }
 
