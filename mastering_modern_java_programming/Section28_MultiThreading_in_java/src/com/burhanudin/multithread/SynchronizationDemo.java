@@ -2,6 +2,7 @@ package com.burhanudin.multithread;
 
 public class SynchronizationDemo {
     public static void main(String[] args) throws InterruptedException {
+
         Counter newCounter = new Counter();
         Runnable unSynchronizedTask = () -> {
             for (int i = 0; i < 100; i++) {
