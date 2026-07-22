@@ -23,7 +23,6 @@ public class SharedResource {
 
         // Notify the waiting consumer
         notify();
-
     }
 
     // Consumer method
