@@ -7,19 +7,24 @@ import java.util.stream.Stream;
 
 public class E_FinisherGatherer {
     public static void main(String[] args) {
-        Gatherer<Integer, List<Integer>, List<Integer>> batchGatherer = Gatherer.ofSequential(ArrayList::new,
-                (buffer, item, downstream) -> {
-                    buffer.add(item);
-                    if (buffer.size() == 3) {
-                        downstream.push(new ArrayList<>(buffer));
-                        buffer.clear();
-                    }
-                    return true;
-                }, (buffer, downstream) -> {
-                    if (!buffer.isEmpty()) {
-                        downstream.push(new ArrayList<>(buffer));
-                    }
-                });
+
+        Gatherer<Integer, List<Integer>, List<Integer>> batchGatherer = Gatherer
+                .ofSequential(ArrayList::new,
+                        (buffer, item, downstream) -> {
+                            buffer.add(item);
+                            if (buffer.size() == 3) {
+                                downstream.push(new ArrayList<>(buffer));
+                                buffer.clear();
+                            }
+                            return true;
+
+                        }, (buffer, downstream) -> {
+                            if (!buffer.isEmpty()) {
+                                downstream.push(new ArrayList<>(buffer));
+                            }
+
+                        });
+
         var result = Stream.of(1, 2, 3, 4, 5, 6, 7, 8)
                 .map(val -> val * 2)
                 .gather(batchGatherer)
