@@ -9,7 +9,7 @@ public class B_DevFriendlyGratherer {
 
         // like MIDDLEWARE
         Gatherer<String, ?, String> newGatherer = Gatherer
-                .of((_, elment, downstream) -> downstream.push(elment.toLowerCase()));
+                .of((_, element, downstream) -> downstream.push(element.toLowerCase()));
 
         List<String> result = strings.stream().gather(newGatherer).toList();
         System.out.println(result);
