@@ -21,4 +21,5 @@ public class VolatileDemo {
         workThread.join();
         stopThread.join();
     }
+
 }
